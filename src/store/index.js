@@ -7,7 +7,7 @@ const uiSlice = createSlice({
         page: 'home',
         popup: false,
         error: false,
-        sent: false,
+        success: false,
     },
     reducers: {
         toggleTheme(state){
@@ -21,7 +21,7 @@ const uiSlice = createSlice({
         }, toggleError(state) {
             state.error = !state.error
         }, toggleSent(state) {
-            state.sent = !state.sent
+            state.success = !state.success
         }
     }
 })

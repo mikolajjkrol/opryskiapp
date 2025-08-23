@@ -32,9 +32,8 @@
   transition: left 0.3s cubic-bezier(.4,0,.2,1);
   pointer-events: none;
   border-radius: 28px 28px 0 0;
-} svg {
-  width: 30px;
-  height: 30px;
+} .navbar .bi{
+  font-size: 28px;
 }
 
 

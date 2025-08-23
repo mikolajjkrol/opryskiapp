@@ -7,17 +7,17 @@ function Calendar(){
             <div className="days">
                 <div className="month">
                     {month.map((item, key) => {
-                    return (<div className="day" id={key}>{item+1}</div>)
+                    return (<div className="day" key={key}>{item+1}</div>)
                     })}
                     </div>
                     <div className="month">
                     {month.map((item, key) => {
-                    return (<div className="day" id={key}>{item+1}</div>)
+                    return (<div className="day" key={key}>{item+1}</div>)
                     })}
                     </div>
                     <div className="month">
                     {month.map((item, key) => {
-                    return (<div className="day" id={key}>{item+1}</div>)
+                    return (<div className="day" key={key}>{item+1}</div>)
                     })}
                 </div>
             </div>

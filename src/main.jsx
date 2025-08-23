@@ -11,6 +11,7 @@ import './css/Calendar.css'
 import './css/Add.css'
 import './css/Opryski.css'
 import './css/Notification.css'
+import './css/Logs.css'
 
 import { store } from './store/index.js'
 
