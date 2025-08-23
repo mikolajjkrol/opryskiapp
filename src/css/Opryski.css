@@ -1,0 +1,112 @@
+.opryski {
+    --rad: 28px; 
+
+    z-index: 20;
+    position: absolute;
+    bottom: 0;
+
+    height: 380px;
+    width: 100%;
+    
+    border-radius: var(--rad) var(--rad) 0 0;
+    background-color: var(--bg);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0 0 0;
+    gap: 20px;
+    
+    transition: transform 0.5s ease-out;
+    overflow: hidden;
+
+} @keyframes slideUp {
+    from {
+        transform: translateY(100%);    
+    } to {
+        transform: translateY(0);
+    }
+}
+
+.slide-up {
+    animation: slideUp ease-out 0.5s;
+} .slide-down {
+    transform: translateY(100%);
+}
+
+
+.opryski input, .opryski button {
+    background-color: var(--main);
+    border: none;
+    outline: none;
+    color: var(--mute-font);
+    padding: 0 20px;
+    height: 60px;
+    width: 320px;
+    font-size: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+
+    text-align: center;
+} .opryski button {
+    background-color: var(--f);
+    color: var(--fc);
+} .opryski button:hover {
+    background-color: hsl(120, 20%, 48%);
+    color: hsl(120, 20%, 85%);
+} .opryski input:hover, .opryski input:focus {
+    background-color: var(--hov);
+}
+
+.x {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 10px 22px;
+    color: var(--mute-font);
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+datalist {
+    background-color: var(--main);
+    border: none;
+    outline: none;
+    color: var(--mute-font);
+    padding: 20px;
+    width: 300px;
+    font-size: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.background {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.226);
+    position: absolute;
+    z-index: 1;
+    animation: forwards opacity-in 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+.show-off {
+    animation: forwards opacity-out 0.5s ease-in-out;
+}
+
+@keyframes opacity-in {
+    from { opacity: 0; } 
+    to { opacity: 1; }
+}
+
+@keyframes opacity-out {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+input.badinput {
+    border: 2px solid red;
+}

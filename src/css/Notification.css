@@ -1,0 +1,29 @@
+.notification {
+    position: absolute;      /* Always at the top of the viewport */
+    top: 0;
+    width: 70%;
+    height: 40px;
+    margin-top: 50px;
+    z-index: 1000;        /* High z-index to be above everything */
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 10px;
+    font-size: 18px;
+    box-shadow: 0 2px 8px 2px 2px rgba(0,0,0,0.15);
+    border-radius: 10px;
+}
+
+.okay {
+    background-color: var(--not-s);
+    color: var(--not-sc);
+} .error {
+    background-color: var(--not-e);
+    color: var(--not-ec);
+}
+
+.notification svg {
+    width: 22px;
+    height: 22px;
+    margin-left: 15px;
+}
