@@ -34,11 +34,11 @@ function Logs(){
         <div className="logs">
             <div className="title">Baza danych</div>
             <div className="alldata">
-                <div className="data">
+                <div className="data" translate="no">
                     {sortedData != false ? sortedData.map((item) => {
                     return (
                         <div className="record" key={item.id}>
-                                <div className="txt">
+                            <div className="txt">
                                 <div className="date">{item.date}</div>
                                 oprysk {item.name.toLowerCase()}, {item.place.charAt(0).toUpperCase() + item.place.slice(1)}     
                             </div>
